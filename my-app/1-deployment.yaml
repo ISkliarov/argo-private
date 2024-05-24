@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
-  namespace: prod
+  namespace: stage01
   labels:
     app: nginx
 spec:
@@ -17,11 +17,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: myapp
-        image: iskliarov/nginx:v0.1.0
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
-        ports:
-        - containerPort: 80
+        - name: nginx
+          image: iskliarov/nginx:v0.1.0
+          ports:
+            - containerPort: 80
