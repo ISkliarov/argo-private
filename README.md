@@ -1,1 +1,1 @@
-### Initial Git Repository for Minikube + ArgoCD project
+### Initial ArgoCD projects Repository for Minikube | Private Repo
