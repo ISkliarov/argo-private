@@ -1,0 +1,11 @@
+---
+namespace: staging
+replicas:
+  - name: nginx-deployment
+    count: 1
+images:
+  - name: iskliarov/nginx
+    newName: iskliarov/nginx-private
+    newTag: v0.0.1
+resources:
+  - ../../../my-app-base
